@@ -1,0 +1,5 @@
+tasks:
+  build:
+    command: "./gradlew build"
+  deploy:
+    command: "./gradlew deploy"

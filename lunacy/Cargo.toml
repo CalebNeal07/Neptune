@@ -1,0 +1,20 @@
+[package]
+name = "lunacy"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ['cdylib']
+
+[profile.release]
+codegen-units = 1
+debug = false
+lto = true
+opt-level = "s"
+panic = "abort"
+
+[dependencies]
+extism-pdk = "1.1.0"
+moon_pdk = "0.0.6"
+proto_pdk = "0.18.0"
