@@ -14,7 +14,6 @@ $schema: "https://moonrepo.dev/schemas/workspace.json"
 projects:
   neptune: "." # TODO: Update this to robot name
   coproc: "coproc"
-  lunacy: "lunacy"
 
 # Setup vcs integration
 vcs:

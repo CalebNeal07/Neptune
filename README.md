@@ -1,5 +1,7 @@
 # Neptune
 
+This repository is intended to hold software and tooling for reapeted use. To use the tools stored to program a robot, fork this repository.
+
 ## Installation
 
 These instructions assume you have already installed git and homebrew for MacOS
@@ -41,4 +43,15 @@ proto use
 > [!NOTE]
 > Every project should automatically install its own dependencies on first build, but these are not installed with the above command only the necessary toolchains to run each project are.
 
-## Usage
+## Subprojects
+
+- [Neptune](.) | The root directory and main [WPILib](https://github.com/wpilibsuite/allwpilib) project.
+- [grafana-frc](./grafana-frc) | A Grafana plugin for using network tables as a data source. WIP`
+- [triton](./triton) | A proto plugin for managing WPILib realeases. WIP
+- [coproc](./coproc) | An example coprocessor with simulation support. WIP
+
+Every project can be built with the following command:
+
+```bash
+proto build <project>:build
+```
